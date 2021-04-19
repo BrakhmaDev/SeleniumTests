@@ -13,8 +13,7 @@ namespace SeleniumInputFormTests.PageObjects
         private readonly By inputFormsButton = By.XPath("//a[text()[contains(.,'Input Forms')]]/preceding-sibling::i[@class]");
         private readonly By simpleFormDemoButton = By.XPath("//li[@style='display: list-item;']/child::a[text()[contains(.,'Simple Form Demo')]]");
         private readonly By waitInputField = By.XPath("//input[@placeholder='Please enter your Message']");
-        private readonly By skipAdvertisementButton = By.XPath("//a[text()[contains(.,'No, thanks!')]]");
-        private readonly By checkboxDemoButton = By.XPath("//li[@style='display: list-item;']/child::a[text()[contains(.,'Checkbox Demo')]]");
+        private readonly By skipAdvertisementButton = By.XPath("//a[text()[contains(.,'No, thanks!')]]");        
         public MainMenuPageObject(IWebDriver webDriver)
         {
             this.webDriver = webDriver;
@@ -34,12 +33,6 @@ namespace SeleniumInputFormTests.PageObjects
             webDriver.FindElement(inputFormsButton).Click();
             WaitUntil.WaitElement(webDriver, inputFormsButton);            
             return new CheckboxDemoPageObject(webDriver);
-        }
-        public RadioButtonsDemoPageObject ChoosingRadioButtons()
-        {
-            webDriver.FindElement(inputFormsButton).Click();
-            WaitUntil.WaitElement(webDriver, inputFormsButton);
-            return new RadioButtonsDemoPageObject(webDriver);
         }
     }
 }
