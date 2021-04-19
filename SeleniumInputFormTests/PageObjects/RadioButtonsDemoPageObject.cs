@@ -36,12 +36,12 @@ namespace SeleniumInputFormTests.PageObjects
             WaitUntil.WaitElement(webDriver, femaleCheckedMessage);
             for (int i = 0; i < sexes.Length; i++)
             {
-                webDriver.FindElement(By.XPath($"//input[@name='gender' and @value='{i}']/parent::label")).Click();
+                webDriver.FindElement(By.XPath($"//input[@value='{sexes[i]}' and @name='gender']")).Click();
                 for (int j = 0; j < ages.Length; j++)
                 {
-                    webDriver.FindElement(By.XPath($"//input[@value='{j}']"));
+                    webDriver.FindElement(By.XPath($"//input[@value='{ages[j]}']")).Click();
                     webDriver.FindElement(getValuesButton).Click();
-                    WaitUntil.WaitElement(webDriver, (By.XPath($"//p[text()[contains(.,'Sex : {i}')]] [text()[contains(.,' Age group: {j}')]]")));
+                    WaitUntil.WaitElement(webDriver, (By.XPath($"//p[text()[contains(.,'Sex : {sexes[i]}')]] [text()[contains(.,' Age group: {ages[j]}')]]")));
                 }
             }
             return new MainMenuPageObject(webDriver);
