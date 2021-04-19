@@ -15,7 +15,9 @@ namespace SeleniumInputFormTests
                 .ChoosingSimpleForm()
                 .SimpleFormDemo()
                 .ChoosingCheckbox()
-                .CheckboxDemo();
+                .CheckboxDemo()
+                .ChoosingRadioButtons()
+                .RadioButtons();
 
 
             Assert.Pass();
