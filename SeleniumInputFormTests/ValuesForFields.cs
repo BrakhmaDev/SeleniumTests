@@ -11,5 +11,6 @@ namespace SeleniumInputFormTests
         public static string EnterMessageField { get; set; } = "Hello World!";
         public static string EnterAfield { get; set; } = "660";
         public static string EnterBfield { get; set; } = "6";
+
     }
 }

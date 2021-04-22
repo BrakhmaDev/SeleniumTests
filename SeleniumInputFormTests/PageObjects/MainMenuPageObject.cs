@@ -47,5 +47,11 @@ namespace SeleniumInputFormTests.PageObjects
             WaitUntil.WaitElement(webDriver, inputFormsButton);
             return new SelectDropdownListPageObject(webDriver);
         }
+        public InputFormSubmitPageObject InputFormSubmit()
+        {
+            webDriver.FindElement(inputFormsButton).Click();
+            WaitUntil.WaitElement(webDriver, inputFormsButton);
+            return new InputFormSubmitPageObject(webDriver);
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace SeleniumInputFormTests
                 .SelectDropdownList()
                 .DropdownList();
 
-
+            
             Assert.Pass();
         }
     }
