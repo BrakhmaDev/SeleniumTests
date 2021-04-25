@@ -16,9 +16,7 @@ namespace SeleniumInputFormTests.PageObjects
         private readonly string[] day = new string[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
         private readonly string[] state = new string[] { "California", "Florida", "New Jersey", "New York", "Ohio", "Texas", "Pennsylvania", "Washington" };
         private readonly By firstSelectedButton = By.XPath("//button[@value='Print First']");
-        private readonly By getAllSelectedButton = By.XPath("//button[@value='Print All']");       
-        //p[text()[contains(.,'First selected option is : Washington')]]
-        //p[text()[contains(.,'Options selected are : Washington')]]
+        private readonly By getAllSelectedButton = By.XPath("//button[@value='Print All']"); 
         public SelectDropdownListPageObject(IWebDriver webDriver)
         {
             this.webDriver = webDriver;

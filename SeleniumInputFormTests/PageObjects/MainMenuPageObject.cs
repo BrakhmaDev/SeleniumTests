@@ -51,7 +51,7 @@ namespace SeleniumInputFormTests.PageObjects
         {
             webDriver.FindElement(inputFormsButton).Click();
             WaitUntil.WaitElement(webDriver, inputFormsButton);
-            return new InputFormSubmitPageObject(webDriver);
-        }
+            return new InputFormSubmitPageObject(webDriver);    
+        }   
     }
 }

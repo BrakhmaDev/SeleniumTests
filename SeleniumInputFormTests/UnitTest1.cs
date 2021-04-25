@@ -19,10 +19,12 @@ namespace SeleniumInputFormTests
                 .ChoosingRadioButtons()
                 .RadioButtons()
                 .SelectDropdownList()
-                .DropdownList();
+                .DropdownList()
+                .InputFormSubmit()
+                .SubmitForm();             
 
             
-            Assert.Pass();
+            Assert.Pass();            
         }
     }
 }
