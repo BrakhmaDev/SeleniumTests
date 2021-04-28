@@ -21,7 +21,11 @@ namespace SeleniumInputFormTests
                 .SelectDropdownList()
                 .DropdownList()
                 .InputFormSubmit()
-                .SubmitForm();             
+                .SubmitForm()
+                .AjaxFormSubmit()
+                .AjaxForm()
+                .JQuerySelectdropdown()
+                .JQuerySelect();
 
             
             Assert.Pass();            

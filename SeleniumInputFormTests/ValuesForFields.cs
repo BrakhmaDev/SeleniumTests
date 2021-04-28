@@ -20,5 +20,8 @@ namespace SeleniumInputFormTests
         public static string ZipCode { get; set; } = "42000";
         public static string Website { get; set; } = "idonthave.com";
         public static string ProjectDescription { get; set; } = "This field exist's just for test";
+        public static string ajaxFormName { get; set; } = "Test Ajax Form";
+        public static string ajaxFormComment { get; set; } = "I don't know how to test ajax form:(";
+        
     }
 }

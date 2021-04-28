@@ -52,6 +52,18 @@ namespace SeleniumInputFormTests.PageObjects
             webDriver.FindElement(inputFormsButton).Click();
             WaitUntil.WaitElement(webDriver, inputFormsButton);
             return new InputFormSubmitPageObject(webDriver);    
-        }   
+        }  
+        public AjaxFormSubmitPageObject AjaxFormSubmit()
+        {
+            webDriver.FindElement(inputFormsButton).Click();
+            WaitUntil.WaitElement(webDriver, inputFormsButton);
+            return new AjaxFormSubmitPageObject(webDriver);
+        }
+        public JQuerySelectdropdownPageObject JQuerySelectdropdown()
+        {
+            webDriver.FindElement(inputFormsButton).Click();
+            WaitUntil.WaitElement(webDriver, inputFormsButton);
+            return new JQuerySelectdropdownPageObject(webDriver);
+        }
     }
 }

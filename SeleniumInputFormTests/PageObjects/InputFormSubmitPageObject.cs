@@ -38,7 +38,7 @@ namespace SeleniumInputFormTests.PageObjects
             webDriver.FindElement(inputformButton).Click();
             WaitUntil.WaitElement(webDriver, inputFormWithValidationsTitle);
             webDriver.FindElement(sendButton).Click();
-            WaitUntil.WaitElement(webDriver, errorMessage);
+            WaitUntil.WaitSomeInterval();
             webDriver.FindElement(firstNameField).SendKeys(ValuesForFields.FirstName);
             webDriver.FindElement(lastNameField).SendKeys(ValuesForFields.LastName);
             webDriver.FindElement(emailField).SendKeys(ValuesForFields.Email);
