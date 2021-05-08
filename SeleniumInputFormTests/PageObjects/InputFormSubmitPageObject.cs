@@ -51,7 +51,6 @@ namespace SeleniumInputFormTests.PageObjects
             webDriver.FindElement(webSiteOrDomainNameField).SendKeys(ValuesForFields.Website);
             webDriver.FindElement(hostingYesButton).Click();
             webDriver.FindElement(hostingNoButton).Click();
-            webDriver.FindElement(webSiteOrDomainNameField).SendKeys(ValuesForFields.Website);
             webDriver.FindElement(projectDescriptionField).SendKeys(ValuesForFields.ProjectDescription);
             webDriver.FindElement(sendButton).Click();
             return new MainMenuPageObject(webDriver);

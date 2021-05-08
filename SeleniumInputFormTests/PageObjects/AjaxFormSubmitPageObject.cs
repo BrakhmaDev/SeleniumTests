@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using System.Threading;
 
 namespace SeleniumInputFormTests.PageObjects
 {
